@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>Testing Sets Of Conditions</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="style2.CSS">
+  </head>
+<body>
+   <div class="wrapper">
+    <div class="Container">
+     <h1 class="top">IF...ELSE & ELSE IF STATEMENTS,TESTING SET OF CONDITIONS & SWITCH<br/> STATEMENTS</h1>
+    <div class="container-1">
+     <p class="para-1">1.Write a program to check whether the given input is divisible by 3 or else show a message "Number is not divisible by 3"?</p>
+     <p id="demo-1"></p>
+     <button onclick="myFunction1()"  class="btn-1">Show Prompt</button>
+ </div>
+   <div class="container-2">
+     <p class="para-2">2.Write a program that check whether the given input is an even number or an odd number?</p>
+    <p id="demo-2"></p>
+    <button onclick="myFunction2()"  class="btn-2">Show Prompt</button>
+ </div>
+   <div class="container-3">
+     <p class="para-3">3.Write an if/else statements with the following condition:If the variable age is greater than18, output"Old enough",otherwise output"Too young."?</p>
+     <p id="demo-3"></p>
+     <button onclick="myFunction3()"  class="btn-3">Show Prompt</button>
+ </div>
+   <div class="container-4">
+      <p class="para-4">4.Write a program that prompts the user for their name,and then displays a special greeting to that person if their name is the same as yours. If the name entered by the user is anything other than your name,your code should not produce any output..</p>
+      <p id="demo-4"></p>
+      <button onclick="myFunction4()"  class="btn-4">Show Prompt</button>
+</div>
+
+ </div>
+</div>
+  
+
+              <!-- JAVASCRIPT START -->
+<script>
+      <!-- CONDITION-1 START -->
+ function myFunction1 () {
+  var x = prompt ("Check the number is divisible by 3 or not?");
+  if (x % 3 === 0 ) {
+    document.getElementById("demo-1").innerHTML =
+   alert("It is divisible by 3");
+  }
+
+ else{
+  document.getElementById("demo-1").innerHTML =
+   alert("It is not divisible by 3");
+  }
+ }
+        <!-- CONDITION-1 END --> 
+
+        <!-- CONDITION-2 START --> 
+     function myFunction2 () {
+  var x = prompt ("Check the number is Even or Odd?");
+  if (x % 2 === 0 ) {
+    document.getElementById("demo-2").innerHTML =
+   alert("It is an Even number");
+  }
+
+ else{
+  document.getElementById("demo-2").innerHTML =
+   alert("It is an Odd number");
+  }
+ }
+    <!-- CONDITION-2 END  --> 
+
+
+    <!-- CONDITION-3 START -->
+
+    function myFunction3 () {
+  var age = prompt ("What is your age?");
+  if ( age > 18 ) {
+    document.getElementById("demo-3").innerHTML =
+   alert("Old Enough");
+  }
+
+ else{
+  document.getElementById("demo-3").innerHTML =
+   alert("Too young");
+  }
+ }
+   <!-- CONDITION-3 END -->
+
+  <!-- CONDITION-4 START -->
+   function myFunction4 () {
+  var person = prompt ("check the name?");
+  if (person !== "Areeba") {
+    document.getElementById("demo-4").innerHTML =
+    alert("SORRY, Your name is incorrect");
+  }
+  else if (person === "Areeba") {
+   document.getElementById("demo-4").innerHTML =
+    alert("Congratulations" + "" + "Areeba" );
+  }
+
+  else {
+   document.getElementById("demo-4").innerHTML =
+    alert();
+   }
+ }
+       <!-- CONDITION-4 END -->
+  </script>
+</body>
+</html>
